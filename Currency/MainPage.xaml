@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Currency.MainPage">
+
+    <Grid
+        RowDefinitions="*,*,*,*,*"
+        ColumnDefinitions="*,4*,*"
+        >
+        <Label
+            x:Name="total"
+            Text="Total: ${}.{} c"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.ColumnSpan="5"
+            Grid.Row="0"
+            Grid.Column="0"
+            />
+        
+        <!-- dollar -->
+        <StackLayout
+            Grid.Row="1"
+            Grid.Column="0"            
+            >
+            <Label
+                Text="$1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Label
+                x:Name="dollarTotal"
+                Text="({})"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </StackLayout>
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Grid.Column="1"
+            HorizontalOptions="CenterAndExpand"
+            >
+            <Button
+                x:Name="plus1"
+                Clicked="plus1_Clicked"
+                Text="+"/>
+            <Button
+                x:Name="minus1"
+                Text="-"/>
+            <Button
+                x:Name="up1"
+                Text="A"/>
+            <Button
+                x:Name="down1"
+                Text="V"/>
+        </HorizontalStackLayout>
+        <Label
+            Text="${}"
+            VerticalOptions="Center"
+            Grid.Row="1"
+            Grid.Column="2"
+            />
+
+        <!-- fiffty cent -->
+        <StackLayout
+            Grid.Row="2"
+            Grid.Column="0"
+            VerticalOptions="Center"
+            >
+            <Label
+                Text="50c"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Label Text="({})"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </StackLayout>
+        <HorizontalStackLayout
+            Grid.Row="2"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            >
+            <Button
+                x:Name="plus50"
+                Text="+"/>
+            <Button
+                x:Name="minus50"
+                Text="-"/>
+            <Button
+                x:Name="up50"
+                Text="A"/>
+            <Button
+                x:Name="down50"
+                Text="V"/>
+        </HorizontalStackLayout>        
+        <Label
+            Text="{}c"
+            VerticalOptions="Center"
+            Grid.Row="2"
+            Grid.Column="2"
+            />
+
+        <!-- ten cent -->
+        <StackLayout
+            Grid.Row="3"
+            Grid.Column="0"
+            VerticalOptions="Center"
+            >
+            <Label
+                Text="10c"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Label Text="({})"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </StackLayout>
+        <HorizontalStackLayout
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            >
+            <Button
+                x:Name="plus10"
+                Text="+"/>
+            <Button
+                x:Name="minus10"
+                Text="-"/>
+            <Button
+                x:Name="up10"
+                Text="A"/>
+            <Button
+                x:Name="down10"
+                Text="V"/>
+        </HorizontalStackLayout>
+        <Label
+            Text="{}c"
+            VerticalOptions="Center"
+            Grid.Row="3"
+            Grid.Column="2"
+            />
+
+        <!-- 5c -->
+        <StackLayout
+            Grid.Row="4"
+            Grid.Column="0"
+            VerticalOptions="Center"
+            >
+            <Label
+                Text="5c"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Label Text="({})"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </StackLayout>
+        <HorizontalStackLayout
+            Grid.Row="4"
+            Grid.Column="1"
+            HorizontalOptions="Center"
+            >
+            <Button
+                x:Name="plus5"
+                Text="+"/>
+            <Button
+                x:Name="minus5"
+                Text="-"/>
+            <Button
+                x:Name="up5"
+                Text="A"/>
+            <Button
+                x:Name="down5"
+                Text="V"/>
+        </HorizontalStackLayout>
+        <Label
+            Text="{}c"
+            VerticalOptions="Center"
+            Grid.Row="4"
+            Grid.Column="2"
+            />
+
+        <!-- 
+        <StackLayout
+            Grid.Row=""
+            Grid.Column=""
+            >
+            <Label
+                Text=""
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Label Text="({})"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   />
+        </StackLayout>
+        <Entry
+            Grid.Row=""
+            Grid.Column=""
+            />
+        <Label
+            Text="{}"
+            Grid.Row=""
+            Grid.Column=""
+            /> -->
+    </Grid>
+    
+    
+</ContentPage>
