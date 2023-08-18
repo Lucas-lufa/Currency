@@ -9,11 +9,13 @@ namespace Currency
     
     internal class Money
     {
+        public Money() { }
+
         public int cents { get; set; }
 
-        public static void AddCents(int cents)
+        public void AddCents( int cent)
         {
-
+           cents = cents + cent;
         }
     }
 }

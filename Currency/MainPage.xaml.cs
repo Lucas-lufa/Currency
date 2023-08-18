@@ -2,16 +2,15 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
+		Money money = new Money();
 	}
 
-    private void plus1_Clicked(object sender, EventArgs e)
+    private void plus1_Clicked(object sender, EventArgs e, Money money)
     {
-
+		money.AddCents(100);
     }
 }
 
